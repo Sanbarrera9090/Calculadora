@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calcu.CalculadoraController">
+   <children>
+      <Pane fx:id="panelPrinciapl" layoutY="6.0" prefHeight="474.0" prefWidth="367.0">
+         <children>
+            <Pane fx:id="panelOperaciones" layoutX="5.0" layoutY="108.0" prefHeight="360.0" prefWidth="355.0" style="-fx-background-color: C0BABA;">
+               <children>
+                  <Button fx:id="btnClear" layoutX="14.0" layoutY="290.0" mnemonicParsing="false" onAction="#doClear" prefHeight="61.0" prefWidth="71.0" text="C">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btncero" layoutX="100.0" layoutY="290.0" mnemonicParsing="false" onAction="#doCero" prefHeight="61.0" prefWidth="71.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnResult" layoutX="187.0" layoutY="290.0" mnemonicParsing="false" onAction="#doResult" prefHeight="61.0" prefWidth="71.0" text="=">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnMas" layoutX="276.0" layoutY="290.0" mnemonicParsing="false" onAction="#doMas" prefHeight="61.0" prefWidth="71.0" text="+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnUno" layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#doUno" prefHeight="61.0" prefWidth="71.0" text="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDos" layoutX="100.0" layoutY="219.0" mnemonicParsing="false" onAction="#doDos" prefHeight="61.0" prefWidth="71.0" text="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTres" layoutX="187.0" layoutY="219.0" mnemonicParsing="false" onAction="#doTres" prefHeight="61.0" prefWidth="71.0" text="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnMenos" layoutX="276.0" layoutY="219.0" mnemonicParsing="false" onAction="#doMenos" prefHeight="61.0" prefWidth="71.0" text="-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btncuatro" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#doCuatro" prefHeight="61.0" prefWidth="71.0" text="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCinco" layoutX="100.0" layoutY="149.0" mnemonicParsing="false" onAction="#doCinco" prefHeight="61.0" prefWidth="71.0" text="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSeis" layoutX="187.0" layoutY="149.0" mnemonicParsing="false" onAction="#doSeis" prefHeight="61.0" prefWidth="71.0" text="6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnMult" layoutX="276.0" layoutY="149.0" mnemonicParsing="false" onAction="#doMultiplicacion" prefHeight="61.0" prefWidth="71.0" text="*">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSiete" layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#doSiete" prefHeight="61.0" prefWidth="71.0" text="7">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnOcho" layoutX="100.0" layoutY="77.0" mnemonicParsing="false" onAction="#doOcho" prefHeight="61.0" prefWidth="71.0" text="8">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNueve" layoutX="187.0" layoutY="77.0" mnemonicParsing="false" onAction="#doNueve" prefHeight="61.0" prefWidth="71.0" text="9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDivision" layoutX="276.0" layoutY="77.0" mnemonicParsing="false" onAction="#doDivision" prefHeight="61.0" prefWidth="71.0" text="/">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="50.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@S_barreraaaa_" />
+                  <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@inst.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@tik.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@iambarrer4" />
+                  <Text layoutX="221.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sigueme" wrappingWidth="110.66400146484375">
+                     <font>
+                        <Font name="Ink Free" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <TextArea fx:id="txtResuluados" layoutX="5.0" layoutY="21.0" onDragDetected="#doResultados" prefHeight="84.0" prefWidth="355.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
